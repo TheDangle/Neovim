@@ -1,86 +1,110 @@
-````markdown
-# 🪓 Neovim of the Norns
+# ⚔️ Valhalla.nvim
 
-> _“Runes carved, spells sung, and keys mapped — may the code of Yggdrasil guide your edits.”_
+> *“He who configures his tools, commands his fate.”*  
+> — Ancient Skald
 
-Welcome, wanderer! This is my **Neovim configuration** — forged in the fires of Muspelheim, refined by Odin’s wisdom, and now shared with the brave. This repository serves as the heart of my text editing rituals, tuned for efficiency, aesthetics, and power.
-
-## 🌌 Purpose
-
-This repository exists to house my **personal Neovim setup** — a configuration designed for development across various realms (Rust, Lua, TypeScript, etc.). It includes settings, keymaps, plugins, and more. Feel free to explore, fork, or contribute if you are a fellow warrior of the terminal.
-
-## 🐺 Installation
-
-### 1. Slay the Old Config
-
-If you already have a Neovim config you wish to replace, back it up or move it:
-
-```sh
-mv ~/.config/nvim ~/.config/nvim.backup
-````
-
-### 2. Clone This Repository
-
-```sh
-git clone https://github.com/YOUR-USERNAME/nvim.git ~/.config/nvim
-```
-
-> 🔮 *Replace `YOUR-USERNAME` with your GitHub username.*
-
-### 3. Launch the Realm
-
-```sh
-nvim
-```
-
-Neovim should now open with your custom setup. If it uses a plugin manager (like [lazy.nvim](https://github.com/folke/lazy.nvim), [packer.nvim](https://github.com/wbthomason/packer.nvim), etc.), it may auto-install plugins on first launch.
-
-## ⚔️ Features
-
-* ⚡ **Fast startup** thanks to lazy loading
-* 🌙 **Dark-mode aesthetics** worthy of Helheim
-* 🧠 **LSP & Autocompletion** to rival Mimir’s wisdom
-* 🔍 **Fuzzy finding** via telescope and live grep
-* 🌀 **Treesitter syntax** — code structure as strong as Yggdrasil
-* 🧙 **Custom keymaps** forged by runes for faster workflow
-
-## 🛠 Requirements
-
-* `neovim` ≥ 0.9
-* `git`
-* `curl`, `ripgrep`, `fd`, etc. depending on plugin needs
-* Nerd Font (for icon support in UI)
-
-## 🏛 Structure
-
-```bash
-~/.config/nvim/
-├── init.lua        # Entry point for the configuration
-├── lua/
-│   ├── core/       # Basic settings and keymaps
-│   ├── plugins/    # Plugin configs
-│   └── ...         # Additional modules
-```
-
-> The structure may differ slightly depending on the config style (Lua-based or legacy `init.vim`).
-
-## 🐉 Contributing
-
-If you are a fellow seeker of perfection in code, feel free to submit an issue or a pull request. Improvements, fixes, or even rune-inscribed enhancements are welcome.
-
-## 🧝‍♂️ Credits
-
-* Inspired by many wandering dotfile mages across the Nine Realms
-* Shoutout to [folke](https://github.com/folke), [tjdevries](https://github.com/tjdevries), and others for plugin wizardry
-
-## ☠️ License
-
-MIT — because even gods must respect the freedom of mortals.
+Welcome, brave traveler. This repository holds the sacred runes of my personal **Neovim configuration** — forged in Lua, hardened in battle, and powered by the might of [`lazy.nvim`](https://github.com/folke/lazy.nvim). May your keystrokes echo through the halls of Valhalla.
 
 ---
 
-> *“He who wields a well-configured Neovim holds power over the very essence of text.”*
-> — **Unknown Skald**
+## 🛠 Purpose
+
+This repository exists to maintain **my personal Neovim setup**, tuned for speed, clarity, and power. Whether crafting spells in Lua or summoning syntax with Treesitter, this config is my blade and shield in the world of code.
+
+---
+
+## 🌌 Installation Guide (For Fresh Warriors)
+
+### 1. Cleanse the Old Ways
+
+If you have an existing config, back it up first:
+
+```bash
+mv ~/.config/nvim ~/.config/nvim.backup
+````
+
+### 2. Clone the Runes of Power
+
+Replace `your-username` with your GitHub username:
+
+```bash
+git clone https://github.com/your-username/nvim ~/.config/nvim
+```
+
+### 3. Enter the Gate
+
+Open Neovim:
+
+```bash
+nvim
+```
+
+On first launch, [`lazy.nvim`](https://github.com/folke/lazy.nvim) will automatically install itself and begin summoning your plugins. Wait for the ritual to complete, then restart Neovim.
+
+---
+
+## ⚙️ Requirements from the Forge
+
+To wield this configuration, you must have:
+
+* **Neovim** version `>= 0.9`
+* **Git** — for pulling the runes of code
+* **Nerd Font** — for UI glyphs and icons
+* **ripgrep (`rg`)** — for fast searching through realms
+* **fd** — for swift file navigation
+* **curl** — for plugin installation and updates
+
+Install via your system’s package manager:
+
+```bash
+# Example for Debian/Ubuntu:
+sudo apt install ripgrep fd-find curl git
+```
+
+---
+
+## 🌲 Configuration Structure
+
+```text
+~/.config/nvim/
+├── init.lua          # Entry point for Neovim
+└── lua/
+    ├── config/       # General settings, keymaps, options
+    ├── plugins/      # Plugin specifications (used by lazy.nvim)
+    └── themes/       # Optional UI customization
+```
+
+---
+
+## 🧙 Features (Runes of Power)
+
+* ⚡ **Lazy-loaded plugins** using `lazy.nvim`
+* 🔮 **LSP support** through `nvim-lspconfig` and friends
+* 🌌 **Telescope** for fuzzy finding across Midgard
+* 🌿 **Treesitter** for advanced syntax highlighting and parsing
+* 🔥 **Autocompletion** with `nvim-cmp` and sources
+* 🧪 **Linting & formatting** using `null-ls.nvim` or `conform.nvim`
+* 🧝‍♂️ **Custom keybindings** crafted for speed and precision
+* 🌑 **Dark theme** worthy of a moonlit Viking raid
+
+---
+
+## 🛡 License
+
+This configuration is released under the **MIT License**.
+Even the gods honor open source.
+
+---
+
+## 📜 Final Words
+
+> *“In code and keystrokes, may your will be done.”*
+
+Skål.
 
 ```
+
+---
+
+You can now paste this into your `README.md` and push it to your GitHub repository. Let me know if you'd like a version that includes example plugin entries using `lazy.nvim`, or a sample `init.lua` structure to accompany this.
 ```
