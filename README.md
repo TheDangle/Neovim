@@ -102,9 +102,4 @@ Even the gods honor open source.
 
 Skål.
 
-```
 
----
-
-You can now paste this into your `README.md` and push it to your GitHub repository. Let me know if you'd like a version that includes example plugin entries using `lazy.nvim`, or a sample `init.lua` structure to accompany this.
-```
